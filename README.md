@@ -1,16 +1,15 @@
 # Project XYZ
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Analysis of Diabetes Risk** is a comprehensive data analysis tool designed for medical professionals to streamline data exploration, analysis, and visualisation to analyze behavioural insights and impact of lifestyle factors on diabetes risk in India.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* The "Diabetes in Young Adults in India" dataset from Kaggle contains 100,000 records of synthetic but realistic data reflecting the prevalence of diabetes and associated factors among young adults (ages 15-25) in India. The data is contains genetic predispositions, lifestyle habits, and key health metrics that influence the onset of diabetes in this demographic.
 
+The dataset includes 22 columns for demographic details, genetic risk factors, lifestyle habits, health metrics, and diabetes outcomes.
 
-## Business Requirements
-* Describe your business requirements
 
 
 ## Hypothesis and how to validate?
@@ -70,12 +69,12 @@
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Dateset 
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
+- Readme and Jupyter notebook() template was built using Code Institute sample Readme file.
+- Juptp 
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
