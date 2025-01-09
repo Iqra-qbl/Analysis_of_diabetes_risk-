@@ -6,19 +6,30 @@
 
 
 ## Dataset Content
-* The "Diabetes in Young Adults in India" dataset from Kaggle contains 100,000 records of synthetic but realistic data reflecting the prevalence of diabetes and associated factors among young adults (ages 15-25) in India. The data is contains genetic predispositions, lifestyle habits, and key health metrics that influence the onset of diabetes in this demographic.
+* The "Diabetes in Young Adults in India" dataset from Kaggle contains 100,000 record entries of synthetic but realistic data reflecting the prevalence of diabetes and associated factors among young adults (ages 15-25) in India. 
 
-The dataset includes 22 columns for demographic details, genetic risk factors, lifestyle habits, health metrics, and diabetes outcomes.
+The dataset contains 100000 rows and 22 columns.
 
+List of columns contains: ID, Age, Gender, Region, Family_Income, Family_History_Diabetes, Parent_Diabetes_Type, Genetic_Risk_Score, BMI, Physical_Activity_Level, Dietary_Habits, Fast_Food_Intake, Smoking, Alcohol_Consumption, Fasting_Blood_Sugar, HbA1c,Cholesterol_Level, Prediabetes, Diabetes_Type, Sleep_Hours, Stress_Level, Screen_Time.
+
+There are no empty values.
 
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+** Setup stage 0
+* Set up the github repository and kanban board to track project files and progress respectively.
+* Update readme file and jupyter notebook in Code Institute repository template.
+* Upload the dataset "Diabetes in Young Adults in India" from kaggle into workspace.
+* Start coding
+
+** ETL Stage 1 (Data extraction, transformation and loading )
+* Imported packages from commonly used python libraries 
+* Checking and analyzing initial dataset information regarding column names, total number of rows and columns,  datatypes, empty values.
+* Transforming dataypes into numeric datatype
+
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
@@ -33,11 +44,7 @@ The dataset includes 22 columns for demographic details, genetic risk factors, l
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
@@ -74,7 +81,8 @@ The dataset includes 22 columns for demographic details, genetic risk factors, l
 ### Content 
 
 - Readme and Jupyter notebook() template was built using Code Institute sample Readme file.
-- Juptp 
+- Importing packages snippet was taken from Code institute LMS: Data Visualisation section.
+- Checking and analyzing initial dataset code snippets were taken from website: https://www.dataquest.io/cheat-sheet/pandas-cheat-sheet/ 
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
