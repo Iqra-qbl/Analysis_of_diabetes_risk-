@@ -1,6 +1,6 @@
 # Project XYZ
 
-**Analysis of Diabetes Risk** is a comprehensive data analysis tool designed for medical professionals to streamline data exploration, analysis, and visualisation to analyze behavioural insights and impact of lifestyle factors on diabetes risk in India.
+**Analysis of Diabetes Risk** is a comprehensive data analysis tool designed for medical professionals to streamline data exploration, analysis, and visualisation to analyze behavioural  and lifestyle factors on diabetes risk in India.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -28,7 +28,8 @@ There are no empty values.
 ** ETL Stage 1 (Data extraction, transformation and loading )
 * Imported packages from commonly used python libraries 
 * Checking and analyzing initial dataset information regarding column names, total number of rows and columns,  datatypes, empty values.
-* Transforming dataypes into numeric datatype
+* Transforming dataypes into numeric datatype using imputer pipeline
+
 
 
 ## The rationale to map the business requirements to the Data Visualisations
@@ -41,10 +42,8 @@ There are no empty values.
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
-
-
+* There was no breach of data privacy.
+ * No bias or unfairness issues with the data.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
@@ -52,10 +51,11 @@ There are no empty values.
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* I wanted to make different functions for each section but started getting errors with the Diabetes dataframe so made the code shorter and simpler to follow.
+* 
 
-## Deployment
+
+
 ### Heroku
 
 * The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
@@ -71,7 +71,10 @@ There are no empty values.
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Pandas 
+* Matplotlib
+* Scit-learn
+* Seaborn
 
 
 ## Credits 
@@ -80,11 +83,10 @@ There are no empty values.
 
 ### Content 
 
-- Readme and Jupyter notebook() template was built using Code Institute sample Readme file.
-- Importing packages snippet was taken from Code institute LMS: Data Visualisation section.
+- Readme and Jupyter notebook()  was built using Code Institute sample Readme and Jupyter files.
+- Importing packages, count values method, drop method, code snippet were taken from Code institute LMS.
 - Checking and analyzing initial dataset code snippets were taken from website: https://www.dataquest.io/cheat-sheet/pandas-cheat-sheet/ 
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+-Transformation imputer code snippet was generated using own logic and Copilot to create a workable code.
 
 ### Media
 
