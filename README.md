@@ -91,11 +91,16 @@ Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum 
 * Matplotlib
 * Scit-learn
 * Seaborn
+* Category Encoder
 
 
 ## Credits 
 
-* Dateset 
+* Dateset: https://www.kaggle.com/datasets/ankushpanday1/diabetes-in-youth-vs-adult-in-india
+* Code Institute: www.learn.codeinstitute.net
+* Microsoft Copilot: www.copilot.com
+* ChatGPT: https://chatgpt.com/
+* Python cheatsheet: https://realpython.com/pandas-python-explore-dataset/
 
 ### Content 
 
@@ -104,12 +109,6 @@ Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum 
 - Checking and analyzing initial dataset code snippets were taken from website: https://www.dataquest.io/cheat-sheet/pandas-cheat-sheet/ 
 -Transformation imputer code snippet was generated using own logic and Copilot to create a workable code but there was unfixable bug, regenerated the tranform imputer code in ChatGPT which now working.
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Thank you Vasi, Neil and all my classmates for their support.
