@@ -1,6 +1,6 @@
 # Project XYZ
 
-**Analysis of Diabetes Risk** is a comprehensive data analysis tool designed for medical professionals to streamline data exploration, analysis, and visualisation to analyze behavioural  and lifestyle factors on diabetes risk in India.
+**Analysis of Diabetes Risk** is a comprehensive data analysis tool designed to streamline data exploration, analyze, and visualize impact of behavioural  and lifestyle factors on diabetes risk in India.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -25,23 +25,47 @@ There are no empty values.
 * Upload the dataset "Diabetes in Young Adults in India" from kaggle into workspace.
 
 * Start coding
+
 ** ETL Stage 1 (Data extraction, transformation and loading )
 * Imported packages from commonly used python libraries 
 * Checking and analyzing initial dataset information regarding column names, total number of rows and columns,  datatypes, empty values.
-* Transforming dataypes into numeric datatype using imputer pipeline
+*Struggled with value count, tried to create a dictionary to store and display values in a more readable format.
+
+**Data Validation
+* Transforming dataypes into numeric datatype using encoder pipeline.
+* Created a separate dictionary  to store and showcase unique values for categorical columns such as Gender, Region, Physical_Activity_Level, etc.
+*Duplicate and missing values were checked.
+
+** Data Cleaning
+* Dropped unnecessary columns, i.e. columns that I was not going to use not for further analysis were dropped, including ID, Family_Income, Family_History_Diabetes, Parent_Diabetes_Type, Fasting_Blood_Sugar, Genetic_Risk_Score, Cholesterol_Level, Prediabetes, and Diabetes_Type.
+* Dropped any NAN values as they were messing data viualistion later on.
+Data Transformation
+Pipeline Setup: A pipeline with an ordinal encoder was created to transform categorical values into numeric values.
+
+Encoding and mapping was done.
 
 
-
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum values
-* How did you structure the data analysis techniques. Justify your response.
+*Descriptive Statistics was done to generate a summary of common stats like mean, max and minimum values to provide an overview of the dataset.
+
+*Correlation Analysis was calculated to understand the relationships between different variables in the dataset.
+
+Heatmap Visualization: A correlation heatmap was created to visually represent the relationships between variables.
+
+** Data Visualization
+*Several visualizations were created to explore and present the data insights.
+
+*Heatmap correlation analysis showed the correlation between various variables such as Age, BMI, HbA1c, Physical_Activity_Level, Dietary_Habits, etc.
+Positive correlations indicated a strong positive relationship between variables while negative correlations showcases there is a negative relationship between variables. No correlations means  little to no linear relationship between the variables.
+
+*Scatter Plot: Age vs. HbA1c Levels by Gender showcased the distribution of HbA1c levels across different ages and genders was suppose to identify trends or anomalies in diabetes control among different demographics.
+*Stacked Bar Plot visualization shows an overview of the average BMI across various regions, broken down by gender to highlight regional disparities in BMI influenced by lifestyle, diet, or access to healthcare.
+
+* Box plot illustration was suppose to show the relationship between physical activity levels and diabetes outcomes but maybe because of data skew couldn't see mean value.
 
 
-* My main issue was there was too much data and it would some time give errors of truncation.
+* My main issue was there was too much data and it would some time give errors of truncation. I struugled with the data visualisation part a lot.
 
 * Use of generative AI tools to help with ideation, design thinking and code optimisation:  I used basic code understanding to anlyze the dataset and then would use own logic to write code and if it didn't work then ask Copilot to generate a working variation for what I want and then apply it, if it worked fine if not modify code until it met my needs.
 
