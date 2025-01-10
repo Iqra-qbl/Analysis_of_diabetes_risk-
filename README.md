@@ -23,8 +23,8 @@ There are no empty values.
 * Set up the github repository and kanban board to track project files and progress respectively.
 * Update readme file and jupyter notebook in Code Institute repository template.
 * Upload the dataset "Diabetes in Young Adults in India" from kaggle into workspace.
-* Start coding
 
+* Start coding
 ** ETL Stage 1 (Data extraction, transformation and loading )
 * Imported packages from commonly used python libraries 
 * Checking and analyzing initial dataset information regarding column names, total number of rows and columns,  datatypes, empty values.
@@ -41,9 +41,9 @@ Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum 
 * How did you structure the data analysis techniques. Justify your response.
 
 
-* Did the data limit you, and did you use an alternative approach to meet these challenges? No, my issue was there was too much data and it would some time give errors of truncation.
+* My main issue was there was too much data and it would some time give errors of truncation.
 
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation? I used basic code understanding to anlyze the dataset and then would use own logic to write code and if it didn't work then ask Copilot to generate a working variation for what I want and then apply it, if it worked fine if not modify code until it met my needs.
+* Use of generative AI tools to help with ideation, design thinking and code optimisation:  I used basic code understanding to anlyze the dataset and then would use own logic to write code and if it didn't work then ask Copilot to generate a working variation for what I want and then apply it, if it worked fine if not modify code until it met my needs.
 
 ## Ethical considerations
 * There was no breach of data privacy.
@@ -63,14 +63,13 @@ Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum 
                    lambda x: {'Sedentary': 0, 'Moderate': 1, 'Active': 2}.get(x, -1))
 
 
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* Many gaps in my knowledge, and I relied heavily on ChatGPT and Copilot to build this project.
+
+Watching fellow peers work, helped to clear confusion. 
 
 ## Development Roadmap
 * I wanted to make different functions for each section but started getting errors with the Diabetes dataframe so made the code shorter and simpler to follow.
-* There was issue with converting 'Sedentary' string to float in the imputer, tried mapping and replacing to no avail.
-
-
+* There was issue with converting 'Sedentary' string to float in the imputer, tried mapping and replacing to no avail, had to remove the code snippet all together, added an encoder pipelinr from Code Institute LMS instead.
 
 ### Heroku
 
@@ -107,7 +106,7 @@ Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum 
 - Readme and Jupyter notebook()  was built using Code Institute sample Readme and Jupyter files.
 - Importing packages, count values method, drop method, code snippet were taken from Code institute LMS.
 - Checking and analyzing initial dataset code snippets were taken from website: https://www.dataquest.io/cheat-sheet/pandas-cheat-sheet/ 
--Transformation imputer code snippet was generated using own logic and Copilot to create a workable code but there was unfixable bug, regenerated the tranform imputer code in ChatGPT which now working.
+- Copilot and ChatGPt were extensively used to make the overall code work especially for data visualisation
 
 
 ## Acknowledgements (optional)
