@@ -37,22 +37,38 @@ There are no empty values.
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
+Descriptive Analysis: Helped to get basis statistics mean, minimum and maxiumum values
 * How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
+
+* Did the data limit you, and did you use an alternative approach to meet these challenges? No, my issue was there was too much data and it would some time give errors of truncation.
+
+* How did you use generative AI tools to help with ideation, design thinking and code optimisation? I used basic code understanding to anlyze the dataset and then would use own logic to write code and if it didn't work then ask Copilot to generate a working variation for what I want and then apply it, if it worked fine if not modify code until it met my needs.
 
 ## Ethical considerations
 * There was no breach of data privacy.
  * No bias or unfairness issues with the data.
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
+* Please mention unfixed bugs and why they were not fixed. 
+ # There is some Value error in mapping or replacing 'Sedentary' in the imputer, kept getting can't convert string into float
+ # (Fixed) Tried ChatGPT to fix imputer code, it gave a cleaner code which is now working
+       # Fill NaN values with 'Unknown' or handle them in another way
+      
+      diabetes_df['Physical_Activity_Level'] = diabetes_df['Physical_Activity_Level'].fillna('Unknown')
+      diabetes_df['Physical_Activity_Level'] = diabetes_df['Physical_Activity_Level'].map({'Sedentary': 0, 'Moderate': 1, 'Active': 2})
+      
+      # Added another line of Copilot code to fix issue, -1 for unknown values
+      diabetes_df['Physical_Activity_Level'] = diabetes_df['Physical_Activity_Level'].apply(
+                   lambda x: {'Sedentary': 0, 'Moderate': 1, 'Active': 2}.get(x, -1))
+
+
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
 * I wanted to make different functions for each section but started getting errors with the Diabetes dataframe so made the code shorter and simpler to follow.
-* 
+* There was issue with converting 'Sedentary' string to float in the imputer, tried mapping and replacing to no avail.
 
 
 
@@ -86,7 +102,7 @@ There are no empty values.
 - Readme and Jupyter notebook()  was built using Code Institute sample Readme and Jupyter files.
 - Importing packages, count values method, drop method, code snippet were taken from Code institute LMS.
 - Checking and analyzing initial dataset code snippets were taken from website: https://www.dataquest.io/cheat-sheet/pandas-cheat-sheet/ 
--Transformation imputer code snippet was generated using own logic and Copilot to create a workable code.
+-Transformation imputer code snippet was generated using own logic and Copilot to create a workable code but there was unfixable bug, regenerated the tranform imputer code in ChatGPT which now working.
 
 ### Media
 
