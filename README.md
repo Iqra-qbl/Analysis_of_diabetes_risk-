@@ -1,4 +1,4 @@
-# Project XYZ
+# Analysis of Diabetes Risk
 
 **Analysis of Diabetes Risk** is a comprehensive data analysis tool designed to streamline data exploration, analyze, and visualize impact of behavioural  and lifestyle factors on diabetes risk in India.
 
@@ -13,10 +13,6 @@ The dataset contains 100000 rows and 22 columns.
 List of columns contains: ID, Age, Gender, Region, Family_Income, Family_History_Diabetes, Parent_Diabetes_Type, Genetic_Risk_Score, BMI, Physical_Activity_Level, Dietary_Habits, Fast_Food_Intake, Smoking, Alcohol_Consumption, Fasting_Blood_Sugar, HbA1c,Cholesterol_Level, Prediabetes, Diabetes_Type, Sleep_Hours, Stress_Level, Screen_Time.
 
 There are no empty values.
-
-
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
 
 ## Project Plan
 ** Setup stage 0
@@ -42,7 +38,7 @@ There are no empty values.
 Data Transformation
 Pipeline Setup: A pipeline with an ordinal encoder was created to transform categorical values into numeric values.
 
-Encoding and mapping was done.
+*Encoding and mapping was done.
 
 
 
@@ -51,7 +47,7 @@ Encoding and mapping was done.
 
 *Correlation Analysis was calculated to understand the relationships between different variables in the dataset.
 
-Heatmap Visualization: A correlation heatmap was created to visually represent the relationships between variables.
+*Heatmap Visualization: A correlation heatmap was created to visually represent the relationships between variables.
 
 ** Data Visualization
 *Several visualizations were created to explore and present the data insights.
@@ -75,7 +71,7 @@ Positive correlations indicated a strong positive relationship between variables
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. 
- # There is some Value error in mapping or replacing 'Sedentary' in the imputer, kept getting can't convert string into float
+ * There is some Value error in mapping or replacing 'Sedentary' in the imputer, kept getting can't convert string into float
  # (Fixed) Tried ChatGPT to fix imputer code, it gave a cleaner code which is now working
        # Fill NaN values with 'Unknown' or handle them in another way
       
@@ -94,20 +90,6 @@ Watching fellow peers work, helped to clear confusion.
 ## Development Roadmap
 * I wanted to make different functions for each section but started getting errors with the Diabetes dataframe so made the code shorter and simpler to follow.
 * There was issue with converting 'Sedentary' string to float in the imputer, tried mapping and replacing to no avail, had to remove the code snippet all together, added an encoder pipelinr from Code Institute LMS instead.
-
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
 
 ## Main Data Analysis Libraries
 * Pandas 
